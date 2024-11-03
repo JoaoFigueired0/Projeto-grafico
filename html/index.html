@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto de Dashboards</title>
+    <link rel="stylesheet" href="../css/index__style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="#">Página Inicial</a></li>
+                <li><a href="#">Relatórios</a></li>
+                <li><a href="#">Configurações</a></li>
+                <li><a href="https://github.com/JoaoFigueired0">Ajuda</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <header>
+                <h1>Dashboard</h1>
+            </header>
+
+            <section class="cards">
+                <div class="card">
+                    <h3>Real para Dolar</h3>
+                    <p id="res-quote-dolar">Carregando cotação...</p>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function () {
+                            getDollarQuote();
+                        });
+                    </script>
+                </div>
+                <div class="card">
+                    <h3>Real para Euro</h3>
+                    <p id="res-quote-euro">Carregando cotação...</p>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function () {
+                            getEuroQuote();
+                        });
+                    </script>
+                </div>
+                <div class="card">
+                    <h3>Real para Bitcoin</h3>
+                    <p id="res-quote-cad">Carregando cotação...</p>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function () {
+                            getCadQuote();
+                        });
+                    </script>
+                </div>
+            </section>
+
+            <div class="header__type__two">
+                <h2>Dados de API cotação de moeda</h2>
+            </div>
+            <section class="charts">
+                <div>
+                    <a href="./Bitcoin.html">
+                        <div class="card__chart">
+                            <img src="../assets/BTC-Ethereum.png" alt="" id="myChart" class="card__image__chart">
+                        </div>
+                    </a>
+                </div>
+                
+                <div>
+                    <a href="./quote.html">
+                        <div class="card__chart">
+                            <img src="../assets/cotacao-dolar.png" alt="" id="myChart" class="card__image__chart">
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <div class="header__type__two">
+                <h2>Jogos (Embreve)</h2>
+            </div>
+            <!-- <section class="charts">
+                <div>
+                    <a href="./valorantpag.html">
+                        <div class="card__chart">
+                            <img src="" alt="" id="myChart" class="card__image__chart">
+                        </div>
+                    </a>
+                </div>
+            </section> -->
+
+        </main>
+    </div>
+
+    <script src="../js/valorMoeda.js"></script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</html>

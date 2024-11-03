@@ -1,0 +1,4 @@
+- A parte do html e do css foi mais tranquilo 
+- O problema geral foi o tratamento de dados e a organização do back-end
+- Penso que eu tenha feito certo mas por não ter muito conhecimento em API deu ruim para estrair o dado, mas consegui trazer o 
+JSON só com o campo que eu precisava para fazer o grafico em pizza 

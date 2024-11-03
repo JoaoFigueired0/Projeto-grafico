@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico de cotação</title>
+    <link rel="stylesheet" href="../css/quote__style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <h2>Gráfico das moedas</h2>
+    <table class="table__coin">
+        <tr>
+            <th class="table__coin__header__name">Moedas</th>
+            <th>Variação</th>
+            <th>Máximo</th>
+            <th>Mínimo</th>
+        </tr>
+
+        <tr id="class-dolar">
+            <td class="table__coin__name">Dolar</td>
+            <td id="variation-dolar"></td>
+            <td id="max-dolar"></td>
+            <td id="min-dolar"></td>
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    getDollarQuote();
+                });
+            </script>
+        </tr>
+
+        <tr>
+            <td class="table__coin__name">Euro</td>
+            <td id="variation-euro"></td>
+            <td id="max-euro"></td>
+            <td id="min-euro"></td>
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    getEuroQuote();
+                });
+            </script>
+        </tr>
+
+        <tr>
+            <td class="table__coin__name">Libra Esterlina</td>
+            <td id="variation-Libra-Esterlina"></td>
+            <td id="max-Libra-Esterlina"></td>
+            <td id="min-Libra-Esterlina"></td>
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    getLibraQuote();
+                });
+            </script>
+
+        </tr>
+
+        <tr>
+            <td class="table__coin__name">Dolar Canadense</td>
+            <td id="variation-Dolar-Canadense"></td>
+            <td id="max-Dolar-Canadense"></td>
+            <td id="min-Dolar-Canadense"></td>
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    getCadQuote();
+                });
+            </script>
+        </tr>
+
+        <tr>
+            <td class="table__coin__name">Dolar Australiano</td>
+            <td id="variation-Dolar-Australiano"></td>
+            <td id="max-Dolar-Australiano"></td>
+            <td id="min-Dolar-Australiano"></td>
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    getAudQuote();
+                });
+            </script>
+        </tr>
+
+        <tr>
+            <td class="table__coin__name">Franco Suiço</td>
+            <td id="variation-Franco"></td>
+            <td id="max-Franco"></td>
+            <td id="min-Franco"></td>
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    getFrancoQuote();
+                });
+            </script>
+        </tr>
+    </table>
+
+
+    <canvas id="myChart" width="" height="80" class="dolar__Chart"><script>dolarChart()</script></canvas>
+
+    <script src="../js/quote.js"></script>
+    <script src="../js/dolarChart.js"></script>
+</body>
+
+</html>
