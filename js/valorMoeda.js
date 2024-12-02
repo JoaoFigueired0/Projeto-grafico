@@ -23,7 +23,7 @@ fetch('https://economia.awesomeapi.com.br/last/EUR-BRL')
     .then(data =>{
 
         const bid = data.EURBRL.bid
-        document.getElementById('res-quote-euro').textContent = `Cotação do Dólar: R$ ${bid}`;
+        document.getElementById('res-quote-euro').textContent = `Cotação do Euro: R$ ${bid}`;
 
     })
 
@@ -41,7 +41,7 @@ fetch('https://economia.awesomeapi.com.br/last/CAD-BRL')
     .then(data =>{
 
         const bid = data.CADBRL.bid
-        document.getElementById('res-quote-cad').textContent = `Cotação do Dólar: R$ ${bid}`;
+        document.getElementById('res-quote-cad').textContent = `Cotação do Bitcoin: R$ ${bid}`;
     })
 
     .catch(error =>{
